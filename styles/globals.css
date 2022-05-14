@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   @apply bg-black;
+}
+
+@layer components {
+   .title_statistcs {
+      @apply text-white text-5xl lg:text-6xl font-inter font-bold !leading-[140%];
+   }
+   .title_lg {
+      @apply text-white text-5xl lg:text-6xl font-lufga-bold font-bold !leading-[140%];
+   }
+   .title_md {
+      @apply text-white text-3xl lg:text-4xl font-lufga-bold font-bold !leading-[120%];
+   }
+   .title_sm {
+      @apply text-white text-xl lg:text-2xl font-lufga-bold font-bold !leading-[89%];
+   }
+   .title_xs {
+      @apply text-white text-base lg:text-lg font-lufga-bold font-bold !leading-[89%];
+   }
+
+   .title_money {
+      @apply text-white text-base lg:text-lg font-lufga-regular !leading-[89%];
+   }
+
+   .subtitle_statistics {
+      @apply text-white text-base font-lufga-regular font-normal !leading-[156.5%];
+   }
+   .subtitle_md {
+      @apply text-gray text-base font-inter font-normal !leading-[156.5%];
+   }
+   .subtitle_sm {
+      @apply text-gray text-sm font-inter font-normal !leading-[156.5%];
+   }
+   .subtitle_xs {
+      @apply text-gray text-xs font-inter font-normal !leading-[156.5%];
+   }
+   .subtitle_check {
+      @apply text-white text-xs font-inter font-normal !leading-[156.5%];
+   }
+   .container {
+      @apply px-5 xl:px-0 xl:max-w-[1110px] mx-auto;
+   }
+   .container_sm {
+      @apply px-5 lg:px-0 lg:w-[920px] mx-auto;
+   }
+}
+
+@layer utilities {
+   .gradient_contact_text {
+      background: linear-gradient(
+         270deg,
+         #2e27fe 0%,
+         #9a12ff 73.96%,
+         #cd05ff 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+   }
+   .white_contact_text {
+      background: linear-gradient(270deg, #fff 0%, #fff 73.96%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+   }
+
+   .card_bg {
+      background-image: url("../public/img/card_border.webp");
+   }
+
+   .card_bg_unset {
+      background-image: unset;
+   }
+
+   .mobile_sidebar_gradeint {
+      background: linear-gradient(#000, #000) padding-box,
+         linear-gradient(180deg, #2e27fe 0%, #9a12ff 100%) border-box;
+      background-repeat: no-repeat;
+   }
+}
+
+.gradient_future {
+   background: linear-gradient(180deg, #2e27fe 0%, #9a12ff 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   /* text-fill-color: transparent; */
+}
+
+.gradeint_bordered_btn {
+   background: linear-gradient(#000, #000) padding-box,
+      linear-gradient(270deg, #2e27fe 0%, #9a12ff 73.96%, #cd05ff 100%)
+         border-box;
+   @apply font-inter duration-150 font-bold text-sm text-white px-[45px] py-3 border-[1.5px] border-transparent rounded-full;
+}
+.gradeint_bordered_btn:hover {
+   background: linear-gradient(#000, #000) padding-box,
+      linear-gradient(90deg, #2e27fe 0%, #9a12ff 73.96%, #cd05ff 100%)
+         border-box;
+}
+
+.gradeint_btn {
+   background: linear-gradient(transparent, transparent) padding-box,
+      linear-gradient(270deg, #2e27fe 0%, #9a12ff 73.96%, #cd05ff 100%)
+         border-box;
+   @apply font-inter duration-150 font-bold text-sm text-white px-[45px] py-3 border-[1.5px] border-transparent rounded-full;
+}
+.gradeint_btn:hover {
+   background: linear-gradient(transparent, transparent) padding-box,
+      linear-gradient(90deg, #2e27fe 0%, #9a12ff 73.96%, #cd05ff 100%)
+         border-box;
+}
+
+#pagination_elm .swiper-pagination-bullet {
+   width: 11px !important;
+   height: 11px !important;
+   background: #312e35 !important;
+   opacity: 1 !important;
+   cursor: pointer;
+}
+#pagination_elm .swiper-pagination-bullet.swiper-pagination-bullet-active {
+   background: linear-gradient(180deg, #2e27fe 0%, #9a12ff 100%) !important;
+}
+
+.currently_open {
+   @apply bg-[#0C0A11] rounded-[30px];
+}
+
+.swiper {
+   width: 100%;
+   height: 100%;
+}
+
+.swiper-slide {
+   text-align: center;
+   font-size: 18px;
+   background: #fff;
+   overflow: hidden;
+   border-radius: 20px;
+}
+
+.swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+   background: linear-gradient(180deg, #2e27fe 0%, #9a12ff 100%) !important;
+}
