@@ -3,7 +3,6 @@ import ReactPlayer from "react-player";
 import { useWindowSize } from "@react-hook/window-size";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import AOS from "aos";
 
 const cards = [
    {
@@ -76,7 +75,7 @@ function VideoSection() {
             >
                {/* <VideoPlayer /> */}
 
-               <ReactPlayer
+               {/* <ReactPlayer
                   url="https://vimeo.com/703219895/42c6f65d4a"
                   width={`${vimeoVideoRatio.width}px`}
                   height={`${vimeoVideoRatio.height}px`}
@@ -84,7 +83,7 @@ function VideoSection() {
                   controls={true}
                   loop={true}
                   autoPlay={false}
-               />
+               /> */}
             </div>
          </div>
          <div
@@ -115,14 +114,10 @@ function VideoSection() {
 export default VideoSection;
 
 const Card = ({ iconSrc, title, subtitle, serial }) => {
-   useEffect(() => {
-      AOS.init();
-      AOS.refresh();
-   }, []);
+
    return (
       <div
          data-aos={`fade-${serial % 2 === 0 ? "left" : "right"}`}
-         data-aos-duration="1000"
          className=" overflow-hidden lg:card_bg bg-no-repeat mobile_sidebar_gradeint border-[1.5px] lg:border-0 border-transparent rounded-[30px]"
       >
          <div className="px-[25px] lg:px-[67px] py-[25px] lg:py-[60px]">

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
-import AOS from "aos";
 
 const roadmaps = [
    {
@@ -110,10 +109,6 @@ function RoadmapSection() {
 export default RoadmapSection;
 
 const RoadmapCard = ({ iconSrc, title, description, step }) => {
-   useEffect(() => {
-      AOS.init();
-      AOS.refresh();
-   }, []);
    return (
       <div
          style={{
@@ -122,8 +117,7 @@ const RoadmapCard = ({ iconSrc, title, description, step }) => {
          }}
          className="sm:w-[500px] lg:w-[356px] rounded-[30px] border-2 border-transparent pl-[42px] pt-8 pb-10 pr-6"
          data-aos={`fade-up-${step % 2 === 0 ? "left" : "right"}`}
-         data-aos-duration="1000"
-         data-aos-delay={`${step * 120}`}
+         data-aos-delay={`${step * 300}`}
       >
          <Image src={iconSrc} width={36} height={36} alt="icon" />
          <h6 className="text-sm text-white font-lufga-bold mt-5 mb-1.5">

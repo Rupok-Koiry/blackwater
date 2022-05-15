@@ -8,7 +8,6 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import AOS from "aos";
 
 const members = [
    {
@@ -87,16 +86,12 @@ const Member = ({
    github,
    email,
 }) => {
-   useEffect(() => {
-      AOS.init();
-      AOS.refresh();
-   }, []);
    return (
       <div
          data-aos="fade-up"
          className="flex flex-col  relative z-0 mb-[150px]"
       >
-         <div className="w-full shadow-lg rounded-[30px]">
+         <div className="w-full shadow-lg rounded-[30px] text-center">
             <Image
                className=""
                src={link}
@@ -106,7 +101,7 @@ const Member = ({
             />
          </div>
          <div
-            className="flex flex-col mx-auto left-0 right-0 -bottom-24 text-center absolute justify-center border-transparent border  overflow-hidden w-10/12 rounded-[30px] bg-darkGray p-6"
+            className="flex flex-col mx-auto left-0 right-0 -bottom-24 text-center absolute justify-center border-transparent border  overflow-hidden w-10/12 rounded-[30px] bg-darkGray p-3 sm:p-6"
             style={{
                background:
                   "linear-gradient(#000, #000) padding-box, linear-gradient(270deg, #2e27fe 0%, #9a12ff 73.96%, #cd05ff 100%) border-box",
@@ -141,7 +136,7 @@ const Member = ({
 
 export default function about() {
    return (
-      <div className="relative h-screen w-screen">
+      <div className="relative h-screen">
          <Header />
          <HeaderSection
             title="Our Team"
@@ -177,7 +172,7 @@ export default function about() {
                data-aos="fade-up"
                className="container flex flex-col relative z-0 items-center justify-center"
             >
-               <div className="border w-full h-[250px] lg:h-[600px] border-transparent overflow-hidden rounded-xl lg:rounded-[30px]">
+               <div className="border w-full lg:h-[600px] border-transparent overflow-hidden rounded-xl lg:rounded-[30px]">
                   <Image
                      src="/img/team.webp"
                      alt="Team Photo"
@@ -187,7 +182,8 @@ export default function about() {
                </div>
                <div
                   data-aos="fade-up"
-                  className="flex flex-col mx-auto left-0 right-0 -bottom-40  md:-bottom-24  text-center absolute justify-center border-transparent border  overflow-hidden w-10/12 rounded-[30px] bg-darkGray space-y-[20px] p-4 md:p-6"
+                  data-offset='{"top": "0"}'
+                  className="flex flex-col mx-auto left-0 right-0 -bottom-40  sm:-bottom-24  text-center absolute justify-center border-transparent border  overflow-hidden w-10/12 rounded-[30px] bg-darkGray space-y-[20px] p-4 md:p-6"
                   style={{
                      background:
                         "linear-gradient(#000, #000) padding-box, linear-gradient(270deg, #2e27fe 0%, #9a12ff 73.96%, #cd05ff 100%) border-box",

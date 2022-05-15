@@ -1,6 +1,4 @@
 import React, { useEffect, useRef } from "react";
-// import AOS from "aos";
-//
 import dynamic from "next/dynamic";
 
 const CalendlyPopupButton = dynamic(() =>
@@ -8,10 +6,7 @@ const CalendlyPopupButton = dynamic(() =>
 );
 
 function HeroSection() {
-   // useEffect(() => {
-   //    AOS.init();
-   //    AOS.refresh();
-   // }, []);
+
    return (
       <section className="mt-[60px]">
          <div className="container overflow-hidden grid grid-cols-1 lg:grid-cols-[45%,auto] gap-y-10">

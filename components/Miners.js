@@ -1,12 +1,7 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
 import Image from "next/image";
 
 const Miners = () => {
-   useEffect(() => {
-      AOS.init();
-      AOS.refresh();
-   }, []);
    return (
       <div className="container mt-[80px]">
          <div className="flex flex-col md:flex-row md:justify-center md:items-center">
@@ -20,72 +15,60 @@ const Miners = () => {
                </p>
                <ul>
                   <li className="mb-[8px] flex flex-row justify-start  items-center ">
-                     <Image
-                        className="inline-block "
+                     <img
+                        className="inline-block w-3 h-3 "
                         src="/img/minerschecklist.svg"
                         alt="check"
-                        width={16}
-                        height={16}
                      />
                      <p className="subtitle_sm inline-block pl-[10px] pt-[3px]">
                         100% Uptime Guaranteed.
                      </p>
                   </li>
                   <li className="mb-[8px] flex flex-row justify-start items-center">
-                     <Image
-                        className="inline-block "
+                     <img
+                        className="inline-block w-3 h-3 "
                         src="/img/minerschecklist.svg"
                         alt="check"
-                        width={16}
-                        height={16}
                      />
                      <p className="subtitle_sm  inline-block pl-[10px] pt-[3px]">
                         Provided by the most reputable and reliable provider.
                      </p>
                   </li>
                   <li className="mb-[8px] flex flex-row justify-start items-center">
-                     <Image
-                        className="inline-block "
+                     <img
+                        className="inline-block w-3 h-3 "
                         src="/img/minerschecklist.svg"
                         alt="check"
-                        width={16}
-                        height={16}
                      />
                      <p className="subtitle_sm  inline-block pl-[10px] pt-[3px]">
                         Miners are in a secure and professional environment.
                      </p>
                   </li>
                   <li className="mb-[8px] flex flex-row justify-start items-center">
-                     <Image
-                        className="inline-block "
+                     <img
+                        className="inline-block w-3 h-3 "
                         src="/img/minerschecklist.svg"
                         alt="check"
-                        width={16}
-                        height={16}
                      />
                      <p className="subtitle_sm  inline-block pl-[10px] pt-[3px]">
                         Enjoy a steady stream of income from your miners
                      </p>
                   </li>
                   <li className="mb-[8px] flex flex-row justify-start items-center">
-                     <Image
-                        className="inline-block "
+                     <img
+                        className="inline-block w-3 h-3 "
                         src="/img/minerschecklist.svg"
                         alt="check"
-                        width={16}
-                        height={16}
                      />
                      <p className="subtitle_sm  inline-block pl-[10px] pt-[3px]">
                         Leave the maintenance and upkeep to us
                      </p>
                   </li>
                   <li className="mb-[8px] flex flex-row justify-start items-center">
-                     <Image
-                        className="inline-block "
+                     <img
+                        className="inline-block w-3 h-3 "
                         src="/img/minerschecklist.svg"
                         alt="check"
-                        width={16}
-                        height={16}
                      />
                      <p className="subtitle_sm  inline-block pl-[10px] pt-[3px]">
                         Team of experienced professionals

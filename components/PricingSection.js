@@ -1,17 +1,12 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import AOS from "aos";
 
 const CalendlyPopupButton = dynamic(() =>
    import("../components/CalendlyPopupButton")
 );
 
 function PricingSection() {
-   useEffect(() => {
-      AOS.init();
-      AOS.refresh();
-   }, []);
    return (
       <section className="mt-[140px] md:mt-[158px]">
          <div className="container text-center">
@@ -29,7 +24,6 @@ function PricingSection() {
             <div
                className=" overflow-hidden border-[1.5px] lg:border border-transparent w-full rounded-[30px]"
                data-aos="fade-right"
-               data-aos-duration="1000"
                style={{
                   background:
                      "linear-gradient(#000, #000) padding-box, linear-gradient(270deg, #2E27FE 0%, #9A12FF 73.96%, #CD05FF 100%) border-box",
@@ -138,7 +132,6 @@ function PricingSection() {
                      "linear-gradient(#000, #000) padding-box, linear-gradient(270deg, #2E27FE 0%, #9A12FF 73.96%, #CD05FF 100%) border-box",
                }}
                data-aos="fade-left"
-               data-aos-duration="1000"
             >
                <div
                   style={{

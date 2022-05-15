@@ -9,17 +9,11 @@ import Statistics from "../components/Statistics";
 import Included from "../components/Included";
 import Miners from "../components/Miners";
 import Image from "next/image";
-import AOS from "aos";
 import React, { useEffect } from "react";
 
 export default function Services() {
-   useEffect(() => {
-      AOS.init();
-      AOS.refresh();
-   }, []);
-
    return (
-      <div className="w-screen h-screen relative">
+      <div className="h-screen relative">
          <div className="absolute -z-10 left-0 top-[95%] opacity-90">
             <Image
                className="absolute -z-10 left-0 top-[95%] opacity-90"
@@ -67,7 +61,6 @@ export default function Services() {
             </div>
             <div
                data-aos="fade-down"
-               data-aos-duration="1000"
                className="mt-[60px] container justify-center items-center grid md:grid-cols-3 gap-6"
             >
                <Features
@@ -170,6 +163,11 @@ export default function Services() {
             </div>
             <div data-aos="fade-up">
                <Included
+                  style={{
+                     paddingTop: "2.45rem",
+                     paddingBottom: "2.45rem",
+                     marginBottom: "0.3px",
+                  }}
                   data-aos="fade-up"
                   title="Overclocked Network Speed"
                   src="/img/serviceadmin.svg"

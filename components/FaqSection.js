@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Collapsible from "react-collapsible";
 import React, { useEffect } from "react";
-import AOS from "aos";
 
 const faqs = [
    {
@@ -64,12 +63,8 @@ export default FaqSection;
 
 const FaqAccordion = ({ title, description, ...rest }) => {
    const [isOpen, setisOpen] = useState(false);
-   useEffect(() => {
-      AOS.init();
-      AOS.refresh();
-   }, []);
    return (
-      <div {...rest} data-aos="fade-up" data-aos-duration="1000">
+      <div {...rest} data-aos="fade-up">
          <Collapsible
             transitionTime={200}
             openedClassName="currently_open"

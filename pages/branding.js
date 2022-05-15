@@ -3,18 +3,13 @@ import HeaderSection from "../components/HeaderSection";
 import GetStarted from "../components/GetStarted";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import AOS from "aos";
 
 import React, { useEffect } from "react";
 
 export default function Branding() {
-   useEffect(() => {
-      AOS.init();
-      AOS.refresh();
-   }, []);
    return (
       <>
-         <div className="relative h-full w-screen">
+         <div className="relative h-full">
             <div className="absolute -z-10 -left-24  md:left-0 -top-48  md:-top-72 ">
                <Image
                   className=""
@@ -42,7 +37,7 @@ export default function Branding() {
 
             <section className="mt-[80px] lg:mt-[120px]">
                <div className="container grid grid-cols-1 md:grid-cols-2 gap-10">
-                  <div className="flex flex-col justify-center space-y-[20px] text-center md:mb-[150px]">
+                  <div className="flex flex-col justify-center space-y-[20px] text-center">
                      <h2
                         data-aos="fade-right"
                         className="title_sm md:text-left"
@@ -69,7 +64,10 @@ export default function Branding() {
                      </p>
                   </div>
                   <div>
-                     <div data-aos="fade-left" className="w-full h-auto ">
+                     <div
+                        data-aos="fade-left"
+                        className="w-full h-auto text-center"
+                     >
                         <Image
                            className=""
                            src="/img/logocomposition.svg"
@@ -110,7 +108,10 @@ export default function Branding() {
                </div>
             </section>
 
-            <section data-aos="fade-up" className="mt-[80px] lg:mt-[120px]">
+            <section
+               data-aos="fade-up"
+               className="mt-[80px] lg:mt-[120px] overflow-x-hidden"
+            >
                <div className="container grid grid-cols-1 justify-center md:grid-cols-2 gap-y-10">
                   <div className="flex flex-col items-center md:items-start space-y-[20px] text-center md:text-left md:mb-[150px]">
                      <div className="text-left">
