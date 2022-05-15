@@ -2,6 +2,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import { useWindowSize } from "@react-hook/window-size";
 import Image from "next/image";
@@ -13,19 +14,19 @@ const navs = [
    },
    {
       title: "Services",
-      url: "services",
+      url: "/services",
    },
    {
       title: "About",
-      url: "about",
+      url: "/about",
    },
    {
       title: "Branding",
-      url: "branding",
+      url: "/branding",
    },
    {
       title: "Contact",
-      url: "contact",
+      url: "/contact",
    },
 ];
 
@@ -61,6 +62,7 @@ function Header() {
          }
       }, 0);
    }, [windowWidth]);
+   const router = useRouter();
 
    return (
       <header
@@ -103,7 +105,11 @@ function Header() {
                            <Link href={nav.url}>
                               <a
                                  onClick={closeSidebarForcely}
-                                 className=" hover:text-blue border-b-2 border-transparent hover:border-primary duration-100 px-6 py-2.5 block lg:p-1"
+                                 className={`${
+                                    router.pathname == nav.url
+                                       ? "gradient_contact_text"
+                                       : ""
+                                 } hover:gradient_contact_text border-b-2 border-transparent hover:border-primary duration-100 px-6 py-2.5 block lg:p-1`}
                               >
                                  {nav.title}
                               </a>
