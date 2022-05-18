@@ -13,7 +13,7 @@ const Miners = () => {
                   These miner models are commercial grade rigs that are known to
                   be a great investment.
                </p>
-               <ul>
+               <ul className="text-left">
                   <li className="mb-[8px] flex flex-row justify-start  items-center ">
                      <img
                         className="inline-block w-3 h-3 "

@@ -116,6 +116,14 @@ function Header() {
                            </Link>
                         </li>
                      ))}
+                     <li>
+                        <button
+                           className="gradeint_btn duration-200"
+                           onClick={() => router.push("/login")}
+                        >
+                           Login
+                        </button>
+                     </li>
                   </ul>
                </div>
                {/* Nav End */}

@@ -221,6 +221,205 @@ export default function about() {
                ))}
             </div>
          </section>
+         <div>
+            <div
+               data-aos="fade-up"
+               className="flex flex-col container justify-center text-center mt-[250px] md:mt-[200px] mb-8"
+            >
+               <h2 className="title_md">BlackWater Team Milestones</h2>
+               <p className="subtitle_md">
+                  Lorem consectetur facilisis quis at odio curabitur a id eu.
+                  Lectus adipiscing convallis blandit diam tristique. Lorem.
+               </p>
+            </div>
+            <section className="bg-black mt-20 max-w-[1110px] mx-auto min-h-screen lg:block hidden overflow-x-hidden">
+               <div className="relative flex items-start">
+                  <p className="w-[300px] text h-20 text-6xl font-black leading-9 text-center">
+                     2020
+                  </p>
+                  <div className="relative top-10 right-4">
+                     <img src="/img/login/line-1.svg" alt="line" />
+                     <div className="absolute right-64 top-12">
+                        <p className="text-xl font-bold leading-loose text-white">
+                           The Conception
+                        </p>
+                        <p
+                           className="text-sm leading-snug text-[#A3A5C1]"
+                           style={{ width: "608px" }}
+                        >
+                           Porttitor enim nibh ut egestas natoque laoreet.
+                           Consequat posuere quam amet cursus. Suspendisse nec
+                           posuere fermentum tellus ultricies consectetur.
+                           Curabitur feugiat purus lectus maecenas. Sit at
+                           pellentesque suspendisse sagittis sollicitudin.
+                           Ultrices faucibus ut.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div className="relative top-20 left-20 xxl:left-28 flex items-start">
+                  <div className="relative top-5 right-0">
+                     <img src="/img/login/line-2.svg" alt="line" />
+
+                     <div className="absolute left-72 top-12">
+                        <p className="text-xl font-bold leading-loose text-right text-white">
+                           Establishing the Company
+                        </p>
+                        <p
+                           className="text-sm leading-snug text-right text-[#A3A5C1]"
+                           style={{ width: "608px" }}
+                        >
+                           Integer adipiscing sed amet egestas. Donec etiam sit
+                           facilisi et tincidunt. Interdum adipiscing felis, est
+                           adipiscing ornare mauris sapien. Dolor parturient
+                           donec donec tellus nibh. Consectetur habitant sit
+                           posuere dignissim mattis risus metus egestas odio.
+                           Elit.
+                        </p>
+                     </div>
+                  </div>
+                  <p className="w-[300px] text h-20 text-6xl font-black leading-9 text-center">
+                     2021
+                  </p>
+               </div>
+               <div className="relative top-40 flex items-start">
+                  <p className="w-[300px] text h-20 text-6xl font-black leading-9 text-center">
+                     2022
+                  </p>
+                  <div className="relative top-5 right-4">
+                     <img src="/img/login/line-3.svg" alt="line" />
+                     <div className="absolute right-20 top-12">
+                        <p className="text-xl font-bold leading-loose text-white">
+                           The Conception
+                        </p>
+                        <p
+                           className="text-sm leading-snug text-[#A3A5C1]"
+                           style={{ width: "608px" }}
+                        >
+                           Porttitor enim nibh ut egestas natoque laoreet.
+                           Consequat posuere quam amet cursus. Suspendisse nec
+                           posuere fermentum tellus ultricies consectetur.
+                           Curabitur feugiat purus lectus maecenas. Sit at
+                           pellentesque suspendisse sagittis sollicitudin.
+                           Ultrices faucibus ut.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <br />
+               <br />
+               <br />
+               <br />
+               <br />
+               <br />
+               <br />
+               <br />
+               <br />
+               <br />
+               <div className="w-fit ml-auto relative bottom-10 right-20">
+                  <p className="text-6xl text-center leading-[80px] font-black text">
+                     Beyond
+                  </p>
+                  <p className="text-xl text-center mt-5 font-bold text-white">
+                     Insert Title
+                  </p>
+                  <p
+                     className="text-sm mt-3 leading-snug text-center text-[#A3A5C1]"
+                     style={{ width: "500px" }}
+                  >
+                     Commodo sollicitudin pellentesque justo amet, et in sed.
+                     Tincidunt ullamcorper quis enim dignissim nibh lacinia leo
+                     ridiculus. Felis, tristique consequat sed etiam arcu sed
+                     arcu vitae. Mollis senectus platea consequat massa urna
+                     pharetra iaculis purus, consectetur.
+                  </p>
+               </div>
+            </section>
+            <section className="bg-black mt-20 mx-auto lg:hidden block">
+               <div className="text-center">
+                  <p className="text text-3xl font-black leading-9 text-center">
+                     1. BlackWater Society Pass
+                  </p>
+                  <div className="md:px-10 px-4 mt-8">
+                     <p className="text-xl font-bold leading-loose text-white">
+                        The Conception
+                     </p>
+                     <p className="text-sm leading-snug text-[#A3A5C1]">
+                        Porttitor enim nibh ut egestas natoque laoreet.
+                        Consequat posuere quam amet cursus. Suspendisse nec
+                        posuere fermentum tellus ultricies consectetur.
+                        Curabitur feugiat purus lectus maecenas. Sit at
+                        pellentesque suspendisse sagittis sollicitudin. Ultrices
+                        faucibus ut.
+                     </p>
+                  </div>
+               </div>
+               <div className="w-3 h-3 mx-auto rounded-full back border-2 border-rounded-full border-white mt-10"></div>
+               <div className="h-20 w-[1px] bg-white mx-auto"></div>
+               <div className="w-3 h-3 mx-auto rounded-full back border-2 border-rounded-full border-white"></div>
+
+               <div className="text-center mt-10">
+                  <p className="text text-3xl font-black leading-9 text-center">
+                     2021
+                  </p>
+                  <div className="md:px-10 px-4 mt-8">
+                     <p className="text-xl font-bold leading-loose text-white">
+                        The Conception
+                     </p>
+                     <p className="text-sm leading-snug text-[#A3A5C1]">
+                        Integer adipiscing sed amet egestas. Donec etiam sit
+                        facilisi et tincidunt. Interdum adipiscing felis, est
+                        adipiscing ornare mauris sapien. Dolor parturient donec
+                        donec tellus nibh. Consectetur habitant sit posuere
+                        dignissim mattis risus metus egestas odio. Elit.
+                     </p>
+                  </div>
+               </div>
+               <div className="w-3 h-3 mx-auto rounded-full back border-2 border-rounded-full border-white mt-10"></div>
+               <div className="h-20 w-[1px] bg-white mx-auto"></div>
+               <div className="w-3 h-3 mx-auto rounded-full back border-2 border-rounded-full border-white"></div>
+
+               <div className="text-center mt-10">
+                  <p className="text text-3xl font-black leading-9 text-center">
+                     2022
+                  </p>
+                  <div className="md:px-10 px-4 mt-8">
+                     <p className="text-xl font-bold leading-loose text-white">
+                        The Conception
+                     </p>
+                     <p className="text-sm leading-snug text-[#A3A5C1]">
+                        Porttitor enim nibh ut egestas natoque laoreet.
+                        Consequat posuere quam amet cursus. Suspendisse nec
+                        posuere fermentum tellus ultricies consectetur.
+                        Curabitur feugiat purus lectus maecenas. Sit at
+                        pellentesque suspendisse sagittis sollicitudin. Ultrices
+                        faucibus ut.
+                     </p>
+                  </div>
+               </div>
+               <div className="w-3 h-3 mx-auto rounded-full back border-2 border-rounded-full border-white mt-10"></div>
+               <div className="h-20 w-[1px] bg-white mx-auto"></div>
+               <div className="w-3 h-3 mx-auto rounded-full back border-2 border-rounded-full border-white"></div>
+
+               <div className="text-center mt-10">
+                  <p className="text text-3xl font-black leading-9 text-center">
+                     Beyond
+                  </p>
+                  <div className="md:px-10 px-4 mt-8">
+                     <p className="text-xl font-bold leading-loose text-white">
+                        Insert Title
+                     </p>
+                     <p className="text-sm leading-snug text-[#A3A5C1]">
+                        Commodo sollicitudin pellentesque justo amet, et in sed.
+                        Tincidunt ullamcorper quis enim dignissim nibh lacinia
+                        leo ridiculus. Felis, tristique consequat sed etiam arcu
+                        sed arcu vitae. Mollis senectus platea consequat massa
+                        urna pharetra iaculis purus, consectetur.
+                     </p>
+                  </div>
+               </div>
+            </section>
+         </div>
          <GetStarted src="/img/getstartedminers_bg.webp" />
          <Footer />
       </div>

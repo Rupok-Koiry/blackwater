@@ -128,7 +128,7 @@ export default function Home() {
             />
          </Head>
          <Header />
-         <main>
+         <main className="overflow-x-hidden">
             <HeroSection />
             <VideoSection />
             <RoadmapSection />

@@ -114,7 +114,6 @@ function VideoSection() {
 export default VideoSection;
 
 const Card = ({ iconSrc, title, subtitle, serial }) => {
-
    return (
       <div
          data-aos={`fade-${serial % 2 === 0 ? "left" : "right"}`}

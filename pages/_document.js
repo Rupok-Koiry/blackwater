@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
    return (
-      <Html className="overflow-x-hidden">
+      <Html>
          <Head>
             <link rel="stylesheet" href="/fonts/fonts.css" />
          </Head>

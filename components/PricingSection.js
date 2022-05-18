@@ -8,7 +8,7 @@ const CalendlyPopupButton = dynamic(() =>
 
 function PricingSection() {
    return (
-      <section className="mt-[140px] md:mt-[158px]">
+      <section className="mt-[140px] md:mt-[158px] ">
          <div className="container text-center">
             <div className="overflow-hidden title_md">
                Mining-As-A-Service Pricing
