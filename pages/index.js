@@ -137,7 +137,7 @@ export default function Home() {
             <FaqSection />
             <GetStarted src="/img/getstartedminers_bg.webp" />
          </main>
-         <Footer />{" "}
+         <Footer />
       </>
    );
 }

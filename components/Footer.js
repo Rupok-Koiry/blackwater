@@ -19,9 +19,7 @@ function Footer() {
                backgroundPosition: "bottom center",
             }}
          >
-            <div
-               className=" overflow-hidden flex flex-col gap-y-16 lg:gap-0 lg:flex-row justify-between container py-[72px] bg-no-repeat  text-center lg:text-left"
-            >
+            <div className=" overflow-hidden flex flex-col gap-y-16 lg:gap-0 lg:flex-row justify-between container py-[72px] bg-no-repeat  text-center lg:text-left">
                <div className="flex flex-col items-center lg:block">
                   <div>
                      <Image

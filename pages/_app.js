@@ -17,21 +17,12 @@ function MyApp({ Component, pageProps }) {
       AOS.init({
          /* easing: "ease-out-cubic", */
          /* once: true, */
-         offset: 30,
+         offset: 50,
          duration: 800,
       });
    }, []);
 
-   return (
-      <>
-         {isLoading ? (
-            <PreLoader/>
-         ) : (
-            <Component {...pageProps} />
-         )}
-         ;
-      </>
-   );
+   return <>{isLoading ? <PreLoader /> : <Component {...pageProps} />}</>;
 }
 
 export default MyApp;

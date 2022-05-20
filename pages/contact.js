@@ -57,7 +57,7 @@ const Contact = () => {
                className="flex  mt-[40px] lg:mt-0 w-full border border-transparent rounded-xl lg:rounded-[25px] "
             >
                <Image
-                  className="border border-transparent rounded-xl lg:rounded-[25px]"
+                  className="border border-transparent rounded-xl lg:rounded-[25px] object-cover"
                   src="/img/warehouse.jpg"
                   alt="warehouse"
                   width={740}

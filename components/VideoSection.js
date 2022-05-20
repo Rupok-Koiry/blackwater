@@ -75,7 +75,7 @@ function VideoSection() {
             >
                {/* <VideoPlayer /> */}
 
-               {/* <ReactPlayer
+               <ReactPlayer
                   url="https://vimeo.com/703219895/42c6f65d4a"
                   width={`${vimeoVideoRatio.width}px`}
                   height={`${vimeoVideoRatio.height}px`}
@@ -83,7 +83,7 @@ function VideoSection() {
                   controls={true}
                   loop={true}
                   autoPlay={false}
-               /> */}
+               />
             </div>
          </div>
          <div
@@ -117,7 +117,7 @@ const Card = ({ iconSrc, title, subtitle, serial }) => {
    return (
       <div
          data-aos={`fade-${serial % 2 === 0 ? "left" : "right"}`}
-         className=" overflow-hidden lg:card_bg bg-no-repeat mobile_sidebar_gradeint border-[1.5px] lg:border-0 border-transparent rounded-[30px]"
+         className=" overflow-hidden mobile_sidebar_gradeint border-[1.5px] border-transparent rounded-[30px]"
       >
          <div className="px-[25px] lg:px-[67px] py-[25px] lg:py-[60px]">
             <Image

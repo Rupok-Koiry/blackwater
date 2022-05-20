@@ -4,8 +4,7 @@ import GetStarted from "../components/GetStarted";
 import Footer from "../components/Footer";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
 import React, { useEffect } from "react";
 
@@ -18,7 +17,7 @@ const members = [
       link: "/img/marcello.webp",
       instagram: "marcellocantu",
       linkedin: "marcellocantu",
-      github: "andyvonde",
+      github: "",
       email: "marcello@blackwater.co",
    },
    {
@@ -30,7 +29,7 @@ const members = [
       instagram: "andyvonde",
       linkedin: "andyvonde",
       github: "andyvonde",
-      email: "andyvonde",
+      email: "info@andykong.me",
    },
    {
       name: "Joey Fraser",
@@ -49,9 +48,9 @@ const members = [
          "My objective is to automate daily tasks in operations and develop scalable applications.",
       link: "/img/aaron.png",
       instagram: "aarontkong",
-      linkedin: "andyvonde",
-      github: "andyvonde",
-      email: "andyvonde",
+      linkedin: "",
+      github: "",
+      email: "",
    },
    {
       name: "Johnny Huynh",
@@ -60,8 +59,8 @@ const members = [
          "My mission is to be innovative while elevating businesses and scaling systems.",
       link: "/img/johnny.webp",
       instagram: "johnnykhuynh",
-      linkedin: "andyvonde",
-      github: "andyvonde",
+      linkedin: "",
+      github: "",
       email: "johnny@blackwater.co",
    },
    {
@@ -72,6 +71,7 @@ const members = [
       link: "/img/jaime.webp",
       instagram: "jaimemartin",
       linkedin: "jaimemartinr",
+      github: "",
       email: "jaime@blackwater.co",
    },
 ];
@@ -114,21 +114,38 @@ const Member = ({
             <p className="subtitle_sm pt-4">{description}</p>
          </div>
          <div className="flex flex-row justify-center absolute mx-auto left-0 right-0 -bottom-[140px] space-x-[10px]">
-            <a
-               className="text-white hover:text-purple"
-               href={`https://www.instagram.com/${instagram}/`}
-            >
-               <FaInstagram size={24} />
-            </a>
-            <a className="text-white hover:text-purple" href="#">
-               <FaLinkedin size={24} />
-            </a>
-            {/* <a className="text-white hover:text-purple " href="#">
-               <FaGithub size={24} />
-            </a> */}
-            <a className="text-white hover:text-purple" href="#">
-               <FaTwitter size={24} />
-            </a>
+            {instagram && (
+               <a
+                  className="text-white hover:text-purple"
+                  href={`https://www.instagram.com/${instagram}/`}
+               >
+                  <FaInstagram size={24} />
+               </a>
+            )}
+            {linkedin && (
+               <a
+                  className="text-white hover:text-purple"
+                  href={`https://www.linkedin.com/in/${linkedin}/`}
+               >
+                  <FaLinkedin size={24} />
+               </a>
+            )}
+            {github && (
+               <a
+                  className="text-white hover:text-purple"
+                  href={`https://www.github.com/${github}/`}
+               >
+                  <FaGithub size={24} />
+               </a>
+            )}
+            {email && (
+               <a
+                  className="text-white hover:text-purple"
+                  href={`mailto:${email}`}
+               >
+                  <FaEnvelope size={24} />
+               </a>
+            )}
          </div>
       </div>
    );

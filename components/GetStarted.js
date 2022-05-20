@@ -2,13 +2,18 @@ import React, { useEffect } from "react";
 
 function GetStarted(props) {
    return (
-      <section className="mt-[40px] lg:mt-[80px] h-[550px]">
+      <section
+         className="mt-[40px] lg:mt-[80px] h-[550px]"
+         style={{
+            backgroundImage: `url('${props.src}')`,
+         }}
+      >
          <div className="container h-full flex flex-col justify-center items-center text-center">
-            <img
+            {/* <img
                className=" absolute object-cover -z-10 w-full h-full opacity-85"
                src={props.src}
                alt="miners"
-            />
+            /> */}
 
             <div className="overflow-hidden">
                <h2 className="title_lg">
