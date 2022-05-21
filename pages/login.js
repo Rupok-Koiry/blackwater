@@ -3,15 +3,16 @@ import React from "react";
 const Login = () => {
    return (
       <section className="md:flex">
-         <div className="flex items-center justify-center w-[100%] md:w-[50%] md:min-h-screen relative bg-[url('/img/login/login-frame.svg')]">
-            <div className="text-white w-full mx-auto">
+         <div className="flex items-center justify-center w-[100%] md:w-[50%] md:min-h-screen relative md:bg-[url('/img/login/login-frame.svg')]">
+            <div className="text-white w-full mx-auto hidden md:block">
                <img
-                  className="relative -top-5 left-0 lg:left-16"
-                  src="/img/login/elipse3.svg"
-                  alt="elipse"
+                  className="relative -top-5 left-6 xl:left-16"
+                  src="/img/login/elipse.svg"
+                  alt="Elipse"
                />
-               <div className="mx-auto w-fit relative -top-14  lg:px-0 px-5">
-                  <h1 className="text-4xl md:text-6xl lg:text-8xl max-w-[452px] font-bold  md:leading-[62px] lg:leading-[96px]">
+
+               <div className="mx-auto w-fit relative -top-14 lg:px-0 px-5">
+                  <h1 className="text-4xl md:text-6xl lg:text-8xl max-w-[452px] font-bold md:leading-[62px] lg:leading-[96px]">
                      Mine the Future of Money.
                   </h1>
                   <p className="max-w-[366px] mt-4 leading-6 mb-16">
@@ -26,16 +27,16 @@ const Login = () => {
          </div>
          <div className="w-[100%] md:w-[50%] flex items-center justify-center bg-black md:my-0 my-8">
             <div className="lg:px-0 px-5">
-               <p className="text-2xl font-bold leading-9 text-white">
-                  Create an account
+               <p className="text-4xl font-bold leading-9 text-white pb-6 text-center">
+                  Create an Account
                </p>
-               <p className="text-sm mt-2 leading-snug text-[#A3A5C1]">
+               <p className="text-sm mt-2 leading-snug text-[#A3A5C1] pb-4">
                   Lectus neque interdum mattis etiam morbi mauris ac.
                </p>
                <button className="flex items-center rounded-full w-full justify-center hover:opacity-80 mt-6 button-gradient text-white text-sm font-bold gap-2 max-w-[357px] h-[53px]">
                   <svg
-                     width="24"
-                     height="24"
+                     width={24}
+                     height={24}
                      viewBox="0 0 24 24"
                      fill="none"
                      xmlns="http://www.w3.org/2000/svg"
@@ -50,15 +51,14 @@ const Login = () => {
                <div className="flex justify-center mt-12 items-center">
                   <svg
                      className="absolute"
-                     width="357"
-                     height="1"
+                     width={357}
+                     height={1}
                      viewBox="0 0 357 1"
                      fill="none"
                      xmlns="http://www.w3.org/2000/svg"
                   >
-                     <line y1="0.5" x2="357" y2="0.5" stroke="#2E2F36" />
+                     <line y1="0.5" x2={357} y2="0.5" stroke="#2E2F36" />
                   </svg>
-
                   <p className="text-xs px-4 absolute bg-black leading-tight text-[#A3A5C1]">
                      or register with your email
                   </p>
@@ -94,8 +94,8 @@ const Login = () => {
                         Password
                      </label>
                   </div>
-                  <div className="w-[170px] mt-12 hover:opacity-80 h-[46px] p-[1px] button-gradient rounded-full">
-                     <button className="w-full h-full bg-black rounded-full">
+                  <div className=" flex justify-center ">
+                     <button className="w-full h-full bg-black rounded-full mt-12 hover:opacity-80 h-[46px] p-[1px] button-gradient rounded-full">
                         <p className="text-sm font-bold rounded-full text-center text-white">
                            Create Account
                         </p>

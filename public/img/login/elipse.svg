@@ -1,7 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.0" preserveAspectRatio="xMidYMid meet" viewBox="Infinity Infinity -Infinity -Infinity">
-<metadata>
-Created by potrace 1.16, written by Peter Selinger 2001-2019
-</metadata>
-<g transform="translate(0.000000,600.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+<svg width="308" height="308" viewBox="0 0 308 308" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M156.486 211.891L190.644 160.653H118.129L152.287 211.891C153.289 213.37 155.484 213.37 156.486 211.891Z" fill="white"/>
+<path d="M192.744 184.697L208.773 160.653H172.516L188.545 184.697C189.547 186.176 191.742 186.176 192.744 184.697Z" fill="white" fill-opacity="0.9"/>
+<path d="M120.228 184.697L136.258 160.653H100L116.03 184.697C117.032 186.176 119.226 186.176 120.228 184.697Z" fill="white" fill-opacity="0.9"/>
+<path d="M164.024 160.653H144.75H106.202L132.881 200.97C133.946 202.554 136.279 202.554 137.345 200.97L154.387 175.216L171.429 200.97C172.494 202.554 174.827 202.554 175.892 200.97L202.571 160.653H164.024Z" fill="url(#paint0_linear_39_2)" fill-opacity="0.95"/>
+<path d="M120.562 119.481L100 160.653H145.322L124.76 119.481C123.901 117.764 121.421 117.764 120.562 119.481Z" fill="white" fill-opacity="0.8"/>
+<path d="M184.013 119.481L163.451 160.653H208.773L188.211 119.481C187.353 117.764 184.872 117.764 184.013 119.481Z" fill="white" fill-opacity="0.8"/>
+<path d="M152.287 92.2881L118.129 160.653H190.644L156.486 92.2881C155.627 90.5706 153.146 90.5706 152.287 92.2881Z" fill="white"/>
+<path d="M144.75 160.653L164.024 160.653L202.571 160.653L175.892 120.335C174.827 118.751 172.494 118.751 171.429 120.335L154.387 146.089L137.345 120.335C136.279 118.751 133.946 118.751 132.881 120.335L106.202 160.653L144.75 160.653Z" fill="url(#paint1_linear_39_2)" fill-opacity="0.9"/>
+<g style="mix-blend-mode:screen" filter="url(#filter0_f_39_2)">
+<circle cx="154" cy="154" r="54" fill="white" fill-opacity="0.5"/>
 </g>
+<defs>
+<filter id="filter0_f_39_2" x="0" y="0" width="308" height="308" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_39_2"/>
+</filter>
+<linearGradient id="paint0_linear_39_2" x1="154.387" y1="160.653" x2="154.387" y2="202.158" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_39_2" x1="154.387" y1="160.653" x2="154.387" y2="119.147" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
 </svg>

@@ -71,16 +71,14 @@ export default function Services() {
                      "linear-gradient(#000, #000) padding-box, linear-gradient(270deg, #2e27fe 0%, #9a12ff 73.96%, #cd05ff 100%) border-box",
                }}
             >
-               <div className="player-wrapper">
+               <div className="player-wrapper overflow-hidden">
                   <ReactPlayer
                      url="/welcome.mp4"
                      className="react-player"
                      width="100%"
                      height="100%"
-                     playing={true}
                      controls={true}
                      loop={true}
-                     autoPlay={false}
                   />
                </div>
             </div>

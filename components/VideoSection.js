@@ -84,16 +84,14 @@ function VideoSection() {
                   loop={true}
                   autoPlay={false}
                /> */}
-               <div className="player-wrapper">
+               <div className="player-wrapper overflow-hidden">
                   <ReactPlayer
                      url="/welcome.mp4"
                      className="react-player"
                      width="100%"
                      height="100%"
-                     playing={true}
                      controls={true}
                      loop={true}
-                     autoPlay={false}
                   />
                </div>
             </div>

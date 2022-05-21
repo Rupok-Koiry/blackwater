@@ -9,7 +9,7 @@ import React, { useEffect } from "react";
 export default function Branding() {
    return (
       <>
-         <div className="relative h-full">
+         <div className="relative h-full overflow-hidden">
             <div className="absolute -z-10 -left-24  md:left-0 -top-48  md:-top-72 ">
                <Image
                   className=""
