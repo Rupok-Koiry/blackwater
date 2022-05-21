@@ -6,7 +6,6 @@ const CalendlyPopupButton = dynamic(() =>
 );
 
 function HeroSection() {
-
    return (
       <section className="mt-[60px]">
          <div className="container overflow-hidden grid grid-cols-1 lg:grid-cols-[45%,auto] gap-y-10">
@@ -26,7 +25,7 @@ function HeroSection() {
             </div>
             <div className="overflow-hidden">
                <video autoPlay muted loop playsInline>
-                  <source src="/banner.mp4" />
+                  <source src="/banner2.mp4" />
                </video>
             </div>
          </div>
