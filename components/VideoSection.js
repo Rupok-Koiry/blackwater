@@ -75,7 +75,7 @@ function VideoSection() {
             >
                {/* <VideoPlayer /> */}
 
-               <ReactPlayer
+               {/* <ReactPlayer
                   url="https://vimeo.com/703219895/42c6f65d4a"
                   width={`${vimeoVideoRatio.width}px`}
                   height={`${vimeoVideoRatio.height}px`}
@@ -83,7 +83,19 @@ function VideoSection() {
                   controls={true}
                   loop={true}
                   autoPlay={false}
-               />
+               /> */}
+               <div className="player-wrapper">
+                  <ReactPlayer
+                     url="/welcome.mp4"
+                     className="react-player"
+                     width="100%"
+                     height="100%"
+                     playing={true}
+                     controls={true}
+                     loop={true}
+                     autoPlay={false}
+                  />
+               </div>
             </div>
          </div>
          <div
