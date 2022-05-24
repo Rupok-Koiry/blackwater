@@ -27,6 +27,11 @@ const Login = () => {
          </div>
          <div className="w-[100%] md:w-[50%] flex items-center justify-center bg-black md:my-0 my-8">
             <div className="lg:px-0 px-5">
+               <img
+                  className="object-cover block md:hidden"
+                  src="/img/login/elipse.svg"
+                  alt="Elipse"
+               />
                <p className="text-4xl font-bold leading-9 text-white pb-6 text-center">
                   Create an Account
                </p>
